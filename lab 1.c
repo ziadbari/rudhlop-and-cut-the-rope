@@ -1,26 +1,24 @@
 #include <stdio.h>
-#include <limits.h>
 
 int main(void)
+
 {
-    int anInteger;
-    unsigned aUnsignedInteger;
-    short int aShortInteger;
-    unsigned short int aUnsignedShortInteger;
-    long int aLongInteger;
-    unsigned long int aUnsignedLongInteger;
-    long long int aLongLongInteger;
-    unsigned long long aUnsignedLongLongInteger;
-    printf("Size of Integer: %llu bytes\n", sizeof(anInteger));
-    printf("Size of unsigned Integer:%llu bytes\n", sizeof(aUnsignedInteger));
-    printf("Size of short Integer: llu bytes\n", sizeof(aShortInteger));
-    printf("Size of unsigned Short Integer: %llu bytes\n", sizeof(aUnsignedShortInteger));
-    printf("Size of Long integer: %llu bytes\n", sizeof(aLongInteger));
-    printf("Size of Unsigned Long Integer:%llu bytes\n",sizeof(aUnsignedLongInteger));
-    printf("Size of Long Long Integer: %llu bytes\n", sizeof(aLongInteger));
-    printf("Size of Unsigned Long Long Integer: %llu bytes\n",sizeof(aUnsignedLongLongInteger));
+    int t,i,n,j,a,b,cnt;
+    scanf("%d",&t);
+    for(i=1;i<=t;++i)
+    {
+        scanf("%d",&n);
+        cnt=0;
+        for(j=1;j<=n;++j)
+        {
+            scanf("%d%d",&a,&b);
 
-        return 0;
+            if(b<a)
+                ++cnt;
 
-}
+        }
+    printf("%d\n",cnt);
+    return 0;
 
+
+}    }
